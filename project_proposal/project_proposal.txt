@@ -1,0 +1,9 @@
+<your andrew id>
+dshafrir
+apeng
+
+<your project name>
+AutoSpot
+
+<your project description>
+An app that will help you find your car after you park it. It essentially works like dropping a GPS pin and then directing you back to it. The UX should be simple: Just an arrow directed by the phone’s compass and your location to point you towards the car. Next versions will have a distance remaining number under the arrow and Apple Watch support (an arrow on the watch). Other potential additions include automatically knowing you have parked (if this then that with disconnecting from your car’s bluetooth causing an automatic pin drop).

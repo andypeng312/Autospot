@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AutoSpot_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-P0-9dl">
+                                <rect key="frame" x="270" y="533" width="60" height="30"/>
+                                <state key="normal" title="Drop Pin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dropPin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z1v-EE-lRi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AutoSpot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffo-XO-151">
+                                <rect key="frame" x="264" y="20" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bigarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="M9d-Kq-GEd">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KDc-P0-9dl" secondAttribute="centerX" id="3Vo-mD-ny1"/>
+                            <constraint firstItem="ffo-XO-151" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="53s-S5-sjg"/>
+                            <constraint firstAttribute="centerX" secondItem="ffo-XO-151" secondAttribute="centerX" constant="-0.5" id="8tv-me-Dwd"/>
+                            <constraint firstAttribute="centerX" secondItem="M9d-Kq-GEd" secondAttribute="centerX" id="IZF-JH-m8H"/>
+                            <constraint firstAttribute="centerY" secondItem="ffo-XO-151" secondAttribute="centerY" constant="269.5" id="JnV-1B-lqT"/>
+                            <constraint firstItem="M9d-Kq-GEd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="160" id="LPE-9h-KAy"/>
+                            <constraint firstItem="ffo-XO-151" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="WIQ-S4-49S"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KDc-P0-9dl" secondAttribute="bottom" constant="37" id="Y30-ud-vTg"/>
+                            <constraint firstAttribute="centerY" secondItem="M9d-Kq-GEd" secondAttribute="centerY" id="oet-pg-VO9"/>
+                            <constraint firstItem="ffo-XO-151" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="otv-RI-1Qa"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="M9d-Kq-GEd" secondAttribute="bottom" constant="180" id="qhH-TR-sX0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowImage" destination="M9d-Kq-GEd" id="Sxp-Kn-yRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bigarrow.png" width="640" height="640"/>
+    </resources>
+</document>
