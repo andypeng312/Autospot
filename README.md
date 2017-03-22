@@ -18,5 +18,5 @@ goals
 **Technologies used:** Swift, Xcode, Objective-C, iOS Core Location framework  
 **Estimated Lines of Code:** 100
 
-![](/Screenshots/screenshot/Splash_screen_portrait.png)
-![](/Screenshots/screenshot/Portrait.png)
+![](/Screenshots/Splash_screen_portrait.png)
+![](/Screenshots/Portrait.png)
